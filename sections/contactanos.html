@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    <div class="gridSetions">
+        <header class="header">
+            <div class="flex-containerHeader">
+                <div class="logo">
+                    <img src="../images/logo.jpg" alt="Logo de la empresa Bosque & Vida">
+                </div>
+            </div>    
+            <!-- Barra de navegación a lado del logotipo y un buscador -->
+            <div class="flex-itemNavegacion">
+                <nav>
+                    <ul class="nav">
+                        <li>
+                            <a href="../index.html"> INICIO</a>
+                        </li>
+                        <li>
+                            <a href="./conocenos.html"> CONOCENOS</a>
+                        </li>
+                        <li>
+                            <a href="./servicios.html"> SERVICIOS</a>
+                            <ul>
+                                <li>
+                                    <a href="./servicios.html#arboricultura">Arboricultura urbana</a>
+                                    <ul>
+                                        <li>
+                                            <a href="./servicios.html#tala">Tala</a>
+                                        </li>
+                                        <li>
+                                            <a href="./servicios.html#traslado">Traslado</a>
+                                        </li>
+                                        <li>
+                                            <a href="./servicios.html#manejoIntegral">Manejo integral</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Una vez agregue los demas productos habilito este espacio en la barra de navegación -->
+                                <!-- 
+                                <li>
+                                    <a href="">Inventarios forestales</a>
+                                </li>
+                                <li>
+                                    <a href="">Mapas tematicos</a>
+                                </li>
+                                -->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./productos.html"> PRODUCTOS</a>
+                            <ul>
+                            <!-- Se habilitara estos productos una vez esten definidos -->
+                            <!--  
+                                <li>
+                                    <a href="">Semillas</a>
+                                </li>
+                            -->
+                                <li>
+                                    <a href="./productos.html#plantulas">Plantulas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./contactanos.html"> CONTACTANOS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <h1>CONTACTANOS</h1>
+        </main>
+        <!-- formulario de contacto -->
+        <section class="section">
+            <article>
+                <h2>LLENA TUS DAOTS</h2>
+                    <form action="#">
+                        <input type="text" placeholder="DECIME TU NOMBRE"><br>
+                        <label for="email">Decime tu email:
+                            <input type="email" placeholder="aaa@gmail.com" name="email"><br>
+                        </label>
+                        <label for="Observaciones"> Observaciones:<br>
+                            <textarea placeholder="Observaciones"></textarea>
+                        </label> <br>
+                        <input type="number" placeholder="DECIME TU EDAD"><br>
+                        <div><p>Elegí un lado:</p>
+                            <div>Izquierda
+                                <input type="radio" name="lado" value="izquierda">
+                            </div>
+                            <div>Derecha
+                                <input type="radio" name="lado" value="derecha">
+                            </div>
+                        </div>
+                        <p>Que letra te gusta mas?</p>
+                        <select name="letra" id="letra"> 
+                            <option value="x">X</option>
+                            <option value="y">Y</option>
+                            <option value="z">Z</option>
+                        </select>
+                        <div>Queres recibir info sobre nosotros?
+                            <input type="checkbox" name="acepta" value="1">
+                        </div>
+                        <input type="submit" value="PASAME LA DATA">
+                        <input type="reset" value="RESETEAR">
+                    </form>
+            </article>
+        </section>
+        <footer class="flex-footer">
+            <div>
+                <p>Siguenos en:</p>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/">
+                    <img src="../images/facebook.png" alt="pagina de Facebook de la empresa">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com">
+                    <img src="../images/instagram.png" alt="pagina de instagram de la empresa">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/">
+                    <img src="../images/linkedin.png" alt="pagina de linkeding de la empresa">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

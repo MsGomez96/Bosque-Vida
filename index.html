@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOSQUE&VIDA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="gridInicio">
+        <header class="header">
+            <div class="flex-containerHeader">
+                <div class="logo">
+                    <img src="./images/logo.jpg" alt="Logo de la empresa Bosque & Vida">
+                </div>
+            </div>    
+            <!-- Barra de navegación a lado del logotipo y un buscador -->
+            <div class="flex-itemNavegacion">
+                <nav>
+                    <ul class="nav">
+                        <li>
+                            <a href="./index.html"> INICIO</a>
+                        </li>
+                        <li>
+                            <a href="./sections/conocenos.html"> CONOCENOS</a>
+                        </li>
+                        <li>
+                            <a href="./sections/servicios.html"> SERVICIOS</a>
+                            <ul>
+                                <li>
+                                    <a href="./sections/servicios.html#arboricultura">Arboricultura urbana</a>
+                                    <ul>
+                                        <li>
+                                            <a href="./sections/servicios.html#tala">Tala</a>
+                                        </li>
+                                        <li>
+                                            <a href="./sections/servicios.html#traslado">Traslado</a>
+                                        </li>
+                                        <li>
+                                            <a href="./sections/servicios.html#manejoIntegral">Manejo integral</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Una vez agregue los demas productos habilito este espacio en la barra de navegación -->
+                                <!-- 
+                                <li>
+                                    <a href="">Inventarios forestales</a>
+                                </li>
+                                <li>
+                                    <a href="">Mapas tematicos</a>
+                                </li>
+                                -->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./sections/productos.html"> PRODUCTOS</a>
+                            <ul>
+                            <!-- Se habilitara estos productos una vez esten definidos -->
+                            <!--  
+                                <li>
+                                    <a href="">Semillas</a>
+                                </li>
+                            -->
+                                <li>
+                                    <a href="./sections/productos.html#plantulas">Plantulas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./sections/contactanos.html"> CONTACTANOS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <h1>BOSQUE & VIDA</h1>
+            <p class="slogan">
+            Cuidamos el medio ambiente
+            <br>
+            Empresa especialista en el manejo del bosque y del arbolado urbano
+            </p>
+        </main>
+        <!-- se va hacer un registro fotografico que vaya cambiando de acuerdo a cada sections -->
+        <section class="sectionServicios">
+            <h2>
+                <a href="./sections/servicios.html">SERVICIOS FORESTALES</a>
+            </h2>
+            <!-- registro fotografico de diferentes servicios forestales, los cuales van a ir cambiando -->
+            <div class="flex-containerInicio">
+                <picture>
+                    <source media="(max-width:480px)" srcset="images\serviciosForestalesMovil.jpg">
+                    <source media="(max-width:600px)" srcset="images\serviciosForestalesTablet.jpg">
+                    <img src="./images/serviciosForestales.jpg" alt="Hombre escalando un árbol como actividad de arboricultura urbana">
+                </picture>
+                <picture>
+                    <source media="(max-width:480px)" srcset="images\trasladoArbolMovil.jpg">
+                    <source media="(max-width:600px)" srcset="images\trasladoArbolTablet.jpg">
+                    <img src="./images/trasladoArbol.jpg" alt="imagen de como trasladan un árbol">
+                </picture>
+                <picture>
+                    <source media="(max-width:480px)" srcset="images\inventarioForestalMovil.png">
+                    <source media="(max-width:600px)" srcset="images\inventarioForestalTablet.png">
+                    <img src="./images/inventarioForestal.png" alt="Hombres haciendo un inventario forestal">
+                </picture>
+                <picture>
+                    <source media="(max-width:480px)" srcset="images\mapasTematicosMovil.jpg">
+                    <source media="(max-width:600px)" srcset="images\mapasTematicosTablet.jpg">
+                    <img src="./images/mapasTematicos.jpg" alt="Mapa tematico del sector forestal">
+                </picture>
+            </div>
+        </section>
+        <section class="sectionProductos">
+            <h2>
+                <a href="./sections/productos.html">PRODUCTOS</a>
+            </h2>
+            <!-- registro fotográfico de los diferentes productos forestales no maderables que van a ir cambiando -->
+            <div class="flex-containerInicio">
+                <picture>
+                    <source media="(max-width:480px)" srcset="images\viverosForestalesMovil.jpg">
+                    <source media="(max-width:600px)" srcset="images\viverosForestalesTablet.jpg">
+                    <img src="./images/viverosForestales.jpg" alt="vivero forestal">
+                </picture>
+                <picture>
+                    <source media="(max-width:480px)" srcset="images\plantulaMovil.jpg">
+                    <source media="(max-width:600px)" srcset="images\plantulaTablet.jpg">
+                    <img src="./images/plantula.jpg" alt="plantula de árbol en vivero">
+                </picture>
+                <picture>
+                    <source media="(max-width:480px)" srcset="images\semillasMovil.jpeg">
+                    <source media="(max-width:600px)" srcset="images\semillasTablet.jpeg">
+                    <img src="./images/semillas.jpeg" alt="Semillas en una mano">
+                </picture>
+            </div>
+        </section>
+        <section class="sectionContactanos">
+            <h2>
+                <a href="./sections/contactanos.html">CONTACTANOS</a>
+            </h2>
+            <!-- El contactanos también será una figura el cual va a tener un tamaño menor al de servicios y productos -->
+            <div class="flex-containerInicio">
+                <picture>
+                    <source media="(max-width:480px)" srcset="images\contactanosMovil.png">
+                    <source media="(max-width:600px)" srcset="images\contactanosTablet.png">
+                    <img src="./images/contactanos.png" alt="figura que hace referencia al contactanos">
+                </picture>
+            </div>
+        </section>
+        <footer class="flex-footer">
+            <div>
+                <p>Siguenos en:</p>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/">
+                    <img src="./images/facebook.png" alt="pagina de Facebook de la empresa">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com">
+                    <img src="./images/instagram.png" alt="pagina de instagram de la empresa">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/">
+                    <img src="./images/linkedin.png" alt="pagina de linkeding de la empresa">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

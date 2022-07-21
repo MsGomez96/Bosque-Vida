@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+    <div class="gridSections">
+        <header class="header">
+            <div class="flex-containerHeader">
+                <div class="logo">
+                    <img src="../images/logo.jpg" alt="Logo de la empresa Bosque & Vida">
+                </div>
+            </div>    
+            <!-- Barra de navegación a lado del logotipo y un buscador -->
+            <div class="flex-itemNavegacion">
+                <nav>
+                    <ul class="nav">
+                        <li>
+                            <a href="../index.html"> INICIO</a>
+                        </li>
+                        <li>
+                            <a href="./conocenos.html"> CONOCENOS</a>
+                        </li>
+                        <li>
+                            <a href="./servicios.html"> SERVICIOS</a>
+                            <ul>
+                                <li>
+                                    <a href="./servicios.html#arboricultura">Arboricultura urbana</a>
+                                    <ul>
+                                        <li>
+                                            <a href="./servicios.html#tala">Tala</a>
+                                        </li>
+                                        <li>
+                                            <a href="./servicios.html#traslado">Traslado</a>
+                                        </li>
+                                        <li>
+                                            <a href="./servicios.html#manejoIntegral">Manejo integral</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Una vez agregue los demas productos habilito este espacio en la barra de navegación -->
+                                <!-- 
+                                <li>
+                                    <a href="">Inventarios forestales</a>
+                                </li>
+                                <li>
+                                    <a href="">Mapas tematicos</a>
+                                </li>
+                                -->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./productos.html"> PRODUCTOS</a>
+                            <ul>
+                            <!-- Se habilitara estos productos una vez esten definidos -->
+                            <!--  
+                                <li>
+                                    <a href="">Semillas</a>
+                                </li>
+                            -->
+                                <li>
+                                    <a href="./productos.html#plantulas">Plantulas</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./contactanos.html"> CONTACTANOS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <h1>SERVICIOS</h1>
+            <P class="slogan">
+                Prestamos el servicio de consultoria ambiental
+                <br>
+                arboricultura urbana, Inventario forestal, Mapas tematicos
+            </P>
+        </main>
+        <section class="section">
+            <h2 id="arboricultura">ARBORICULTURA URBANA</h2>
+            <div>
+                <div class=" recuadro serviciosTala">
+                    <h3 id="tala">Tala</h3>
+                    <div class="text">
+                        <p>
+                            Prestamos el sericio de tala de individuos arboreos, realizado por operarios capacitados y con las herramientas adecuadas
+                            además, se cuenta con el permiso de las Autoridades Ambientales Competentes de difertentes ciudades.
+                        </p>
+                    </div>
+                    <div class="flex-imagen">
+                        <div class="imagen">
+                            <picture>
+                                <source media="(max-width:300px)" srcset="../images/talaArbol300px.jpg">
+                                <source media="(max-width:480px)" srcset="../images/talaArbol480px.jpg">
+                                <source media="(max-width:600px)" srcset="../images/talaArbol600px.jpg">
+                                <img src="../images/talaArbol.jpg" alt="Persona capacitada talando un árbol">
+                            </picture>
+                        </div>
+                        <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OoIcLUB5AOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="recuadro servicioTraslado">
+                    <h3 id="traslado">Traslado de árboles</h3>
+                    <div class="text">
+                        <p>
+                            Prestamos el servicio de traslado de indivudos arboreos con hasta 20 metros de altura
+                            con la maquinaria adecuada, de manera que el objetivo sea trasladar en la mejores condiciones
+                            al individuo, así mismo se realiza un rescate de fauna silvestre.
+                        </p>
+                    </div>
+                    <div class="flex-imagen">
+                        <div class="imagen">
+                            <picture>
+                                <source media="(max-width:300px)" srcset="../images/maquinaTraslado300px.jpeg">
+                                <source media="(max-width:480px)" srcset="../images/maquinaTraslado480px.jpeg">
+                                <source media="(max-width:600px)" srcset="../images/maquinaTraslado600px.jpeg">
+                                <img src="../images/maquinaTraslado.jpeg" alt="árbol trasladado con una maquina grúa">
+                            </picture>
+                        </div>
+                        <div class="video">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/7_OhdkTNUNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="recuadro servicioManejoI">
+                    <h3 id="manejoIntegral">Manejo integral</h3>
+                    <div class="text">
+                        <p>
+                            Se presta el servicio de manejo integral correspondiente a la poda aérea y
+                            poda radicular, lo que permite al individuo arboreo presentar una mejora
+                            en su estado físico y sanitario.
+                        </p>
+                    </div>
+                    <div class="gridManejoI">
+                        <div class="recuadroM podaA">
+                            <h4>Poda áerea</h4>
+                            <div class="flex-imagen">
+                                <div class="imagen">
+                                    <picture>
+                                        <source media="(max-width:300px)" srcset="../images/podaAerea300px.jpg">
+                                        <source media="(max-width:480px)" srcset="../images/podaAerea480px.jpg">
+                                        <source media="(max-width:600px)" srcset="../images/podaAerea600px.jpg">
+                                        <img src="../images/podaAerea.jpg" alt="Hombre podando un árbol con todas las medidas de precaución y seguridad">
+                                    </picture>
+                                </div>
+                                <div class="video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pLiFS0EW9R8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recuadroM podaR">
+                            <h4>Poda Radicular</h4>
+                            <div class="flex-imagen">
+                                <div class="imagen">
+                                    <picture>
+                                        <source media="(max-width:300px)" srcset="../images/podaRadicular300px.jpg">
+                                        <source media="(max-width:480px)" srcset="../images/podaRadicular480px.jpg">
+                                        <source media="(max-width:600px)" srcset="../images/podaRadicular600px.jpg">
+                                        <img src="../images/podaRadicular.jpg" alt="hombre podando la raíz de un árbol">
+                                    </picture>
+                                </div>
+                                <div class="video">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5dPaICwfnhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Falta agregar mas servicios que me hace falta buscar información -->
+        </section>
+        <footer class="flex-footer">
+            <div>
+                <p>Siguenos en:</p>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/">
+                    <img src="../images/facebook.png" alt="pagina de Facebook de la empresa">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com">
+                    <img src="../images/instagram.png" alt="pagina de instagram de la empresa">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/">
+                    <img src="../images/linkedin.png" alt="pagina de linkeding de la empresa">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
