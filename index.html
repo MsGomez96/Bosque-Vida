@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BOSQUE&VIDA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,56 +85,82 @@
             Empresa especialista en el manejo del bosque y del arbolado urbano
             </p>
         </main>
-        <!-- se va hacer un registro fotografico que vaya cambiando de acuerdo a cada sections -->
         <section class="sectionServicios">
             <h2>
                 <a href="./sections/servicios.html">SERVICIOS FORESTALES</a>
             </h2>
-            <!-- registro fotografico de diferentes servicios forestales, los cuales van a ir cambiando -->
-            <div class="flex-containerInicio">
-                <picture>
-                    <source media="(max-width:480px)" srcset="images\serviciosForestalesMovil.jpg">
-                    <source media="(max-width:600px)" srcset="images\serviciosForestalesTablet.jpg">
-                    <img src="./images/serviciosForestales.jpg" alt="Hombre escalando un árbol como actividad de arboricultura urbana">
-                </picture>
-                <picture>
-                    <source media="(max-width:480px)" srcset="images\trasladoArbolMovil.jpg">
-                    <source media="(max-width:600px)" srcset="images\trasladoArbolTablet.jpg">
-                    <img src="./images/trasladoArbol.jpg" alt="imagen de como trasladan un árbol">
-                </picture>
-                <picture>
-                    <source media="(max-width:480px)" srcset="images\inventarioForestalMovil.png">
-                    <source media="(max-width:600px)" srcset="images\inventarioForestalTablet.png">
-                    <img src="./images/inventarioForestal.png" alt="Hombres haciendo un inventario forestal">
-                </picture>
-                <picture>
-                    <source media="(max-width:480px)" srcset="images\mapasTematicosMovil.jpg">
-                    <source media="(max-width:600px)" srcset="images\mapasTematicosTablet.jpg">
-                    <img src="./images/mapasTematicos.jpg" alt="Mapa tematico del sector forestal">
-                </picture>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <picture class="img">
+                            <source media="(max-width:300px)" srcset="images\serviciosForestalesMovil.jpg">
+                            <source media="(max-width:576px)" srcset="images\serviciosForestalesLG.jpg">
+                            <source media="(max-width:768px)" srcset="images\serviciosForestalesXXL.jpg">
+                            <source media="(max-width:992px)" srcset="images\serviciosForestalesLG.jpg">
+                            <source media="(max-width:1200px)" srcset="images\serviciosForestalesXL.jpg">
+                            <img src="./images/serviciosForestalesXXL.jpg" alt="Hombre escalando un árbol como actividad de arboricultura urbana">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture class="img">
+                            <source media="(max-width:300px)" srcset="images\trasladoArbolMovil.jpg">
+                            <source media="(max-width:576px)" srcset="images\trasladoArbolLG.jpg">
+                            <source media="(max-width:768px)" srcset="images\trasladoArbolXXL.jpg">
+                            <source media="(max-width:992px)" srcset="images\trasladoArbolLG.jpg">
+                            <source media="(max-width:1200px)" srcset="images\trasladoArbolXL.jpg">
+                            <img src="./images/trasladoArbolXXL.jpg" alt="imagen de como trasladan un árbol">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture class="img">
+                            <source media="(max-width:300px)" srcset="images\inventarioForestalMovil.png">
+                            <source media="(max-width:576px)" srcset="images\inventarioForestalLG.png">
+                            <source media="(max-width:768px)" srcset="images\inventarioForestalXXL.png">
+                            <source media="(max-width:992px)" srcset="images\inventarioForestalLG.png">
+                            <source media="(max-width:1200px)" srcset="images\inventarioForestalXL.png">
+                            <img src="./images/inventarioForestalXXL.png" alt="Hombres haciendo un inventario forestal">
+                        </picture>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="sectionProductos">
             <h2>
                 <a href="./sections/productos.html">PRODUCTOS</a>
             </h2>
-            <!-- registro fotográfico de los diferentes productos forestales no maderables que van a ir cambiando -->
-            <div class="flex-containerInicio">
-                <picture>
-                    <source media="(max-width:480px)" srcset="images\viverosForestalesMovil.jpg">
-                    <source media="(max-width:600px)" srcset="images\viverosForestalesTablet.jpg">
-                    <img src="./images/viverosForestales.jpg" alt="vivero forestal">
-                </picture>
-                <picture>
-                    <source media="(max-width:480px)" srcset="images\plantulaMovil.jpg">
-                    <source media="(max-width:600px)" srcset="images\plantulaTablet.jpg">
-                    <img src="./images/plantula.jpg" alt="plantula de árbol en vivero">
-                </picture>
-                <picture>
-                    <source media="(max-width:480px)" srcset="images\semillasMovil.jpeg">
-                    <source media="(max-width:600px)" srcset="images\semillasTablet.jpeg">
-                    <img src="./images/semillas.jpeg" alt="Semillas en una mano">
-                </picture>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-item active">
+                        <picture class="img">
+                            <source media="(max-width:300px)" srcset="images\viverosForestalesMovil.jpg">
+                            <source media="(max-width:576px)" srcset="images\viverosForestalesLG.jpg">
+                            <source media="(max-width:768px)" srcset="images\viverosForestalesXXL.jpg">
+                            <source media="(max-width:992px)" srcset="images\viverosForestalesLG.jpg">
+                            <source media="(max-width:1200px)" srcset="images\viverosForestalesXL.jpg">
+                            <img src="./images/viverosForestalesXXL.jpg" alt="vivero forestal">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture class="img">
+                            <source media="(max-width:300px)" srcset="images\plantulaMovil.jpg">
+                            <source media="(max-width:576px)" srcset="images\plantulaLG.jpg">
+                            <source media="(max-width:768px)" srcset="images\plantulaXXL.jpg">
+                            <source media="(max-width:992px)" srcset="images\plantulaLG.jpg">
+                            <source media="(max-width:1200px)" srcset="images\plantulaXL.jpg">
+                            <img src="./images/plantulaXXL.jpg" alt="plantula de árbol en vivero">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture class="img">
+                            <source media="(max-width:300px)" srcset="images\semillasMovil.jpeg">
+                            <source media="(max-width:576px)" srcset="images\semillasLG.jpeg">
+                            <source media="(max-width:768px)" srcset="images\semillasXXL.jpeg">
+                            <source media="(max-width:992px)" srcset="images\semillasLG.jpeg">
+                            <source media="(max-width:1200px)" srcset="images\semillasXL.jpeg">
+                            <img src="./images/semillasXXL.jpeg" alt="Semillas en una mano">
+                        </picture>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="sectionContactanos">
@@ -170,5 +197,6 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -29,6 +29,7 @@ gris: #FAF3E3
     "footer footer";
     grid-template-columns: 1f 1fr;
     grid-template-rows: auto;
+    grid-column-gap: 10px;
 }
 /* Grid sections */
 .gridSections{
@@ -232,6 +233,10 @@ section a{
     color: #000;
     padding: 1em 5em;
 }
+.img{
+    display: flex;
+    justify-content: center;
+}
 .imagen source, .imagen img{
     margin: 5px;
     border: dashed green;
@@ -311,7 +316,7 @@ footer img{
     height: 25px;
     width: 25px;
 }
-/* tablet */
+/* XXL */
 @media (max-width: 768px){
     /* Barra de navegación tablet */
     .header{
@@ -384,9 +389,20 @@ footer img{
         background-color:#BBF551;
     }
 }
-/* tablet pequeña */
-@media (max-width: 600px){
+/* MD */
+@media (max-width: 768px){
     /* Barra de navegación tablet */
+    .gridInicio{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "sectionServicios"
+        "sectionProductos"
+        "sectionContactanos"
+        "footer";
+        grid-template-columns: 100%;
+    }
     .header{
         flex-direction: column;
     }
@@ -442,8 +458,8 @@ footer img{
         background-color:#BBF551;
     }
 }
-/* Mobil*/
-@media (max-width: 480px){
+/* SM */
+@media (max-width: 576px){
     .gridInicio{
         display: grid;
         grid-template-areas: 
@@ -512,7 +528,7 @@ footer img{
         margin-top: 1px;
     }
 }
-/* Mobil pequeño*/
+/* XS */
 @media (max-width: 250px){
     /* Titulo de pagina */
     h1{
