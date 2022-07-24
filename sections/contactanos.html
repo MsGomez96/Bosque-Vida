@@ -84,36 +84,54 @@
         <!-- formulario de contacto -->
         <section class="section">
             <article>
-                <h2>LLENA TUS DAOTS</h2>
-                    <form action="#">
-                        <input type="text" placeholder="DECIME TU NOMBRE"><br>
-                        <label for="email">Decime tu email:
-                            <input type="email" placeholder="aaa@gmail.com" name="email"><br>
-                        </label>
-                        <label for="Observaciones"> Observaciones:<br>
-                            <textarea placeholder="Observaciones"></textarea>
-                        </label> <br>
-                        <input type="number" placeholder="DECIME TU EDAD"><br>
-                        <div><p>Elegí un lado:</p>
-                            <div>Izquierda
-                                <input type="radio" name="lado" value="izquierda">
-                            </div>
-                            <div>Derecha
-                                <input type="radio" name="lado" value="derecha">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="well well-lg">
+                                <form class="form-horizontal" method="post">
+                                    <fieldset>
+                                        <legend class="text-center titulo3">Llena los siguientes datos</legend>
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                            <div class="col-md-12">
+                                                <input id="fname" name="name" type="text" placeholder="Nombres" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                            <div class="col-md-12">
+                                                <input id="lname" name="name" type="text" placeholder="Apellidos" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                            <div class="col-md-12">
+                                                <input id="email" name="email" type="text" placeholder="Correo eletronico" class="form-control">
+                                            </div>
+                                        </div>                
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                            <div class="col-md-12">
+                                                <input id="phone" name="phone" type="text" placeholder="Número de celular" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                            <div class="col-md-12">
+                                                <textarea class="form-control" id="message" name="message" placeholder="Escribenos en qué te podemos ayudar" rows="7"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-12 text-center">
+                                                <button type="submit" class="btn color btn-lg">Enviar</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
                             </div>
                         </div>
-                        <p>Que letra te gusta mas?</p>
-                        <select name="letra" id="letra"> 
-                            <option value="x">X</option>
-                            <option value="y">Y</option>
-                            <option value="z">Z</option>
-                        </select>
-                        <div>Queres recibir info sobre nosotros?
-                            <input type="checkbox" name="acepta" value="1">
-                        </div>
-                        <input type="submit" value="PASAME LA DATA">
-                        <input type="reset" value="RESETEAR">
-                    </form>
+                    </div>
+                </div>
             </article>
         </section>
         <footer class="flex-footer">

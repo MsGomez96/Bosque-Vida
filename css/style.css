@@ -116,32 +116,32 @@ h1{
 /* Animaciones de titulo */
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 5s linear both;
-	        animation: tracking-in-expand 5s linear both;
+	animation: tracking-in-expand 5s linear both;
 }
 @-webkit-keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+    letter-spacing: -0.5em;
+    opacity: 0;
     }
     40% {
-      opacity: 0.6;
+    opacity: 0.6;
     }
     100% {
-      opacity: 1;
+    opacity: 1;
     }
-  }
-  @keyframes tracking-in-expand {
+}
+@keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
+    letter-spacing: -0.5em;
+    opacity: 0;
     }
     40% {
-      opacity: 0.6;
+    opacity: 0.6;
     }
     100% {
-      opacity: 1;
+    opacity: 1;
     }
-  }  
+}  
 .slogan{
     font-family:'Playfair Display', serif;
     font-size: 20px;
@@ -290,6 +290,21 @@ section a{
     font-size: 16px;
     font-weight: bold;
     color: red;
+}
+/* Formulario de contacto */
+.titulo3 {
+    color: green;
+    font-size: 27px;
+    padding: 10px;
+}
+.bigicon {
+    font-size: 35px;
+    color: green;
+}
+.color{
+    color: black;
+    background-color: #9EB23B;
+    border: solid #000 2px;
 }
 /* Footer */
 .flex-footer{
