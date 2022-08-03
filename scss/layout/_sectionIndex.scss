@@ -1,0 +1,34 @@
+.sectionServicios{
+    grid-area: sectionServicios;
+} 
+.sectionProductos{
+    grid-area: sectionProductos;
+} 
+.sectionContactanos{
+    grid-area: sectionContactanos;
+}
+.flex-containerInicio{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+h2{
+    text-align: center;
+    font-size: 38px;
+    a{
+        text-decoration: none;
+        box-shadow: none;
+        font-family:$TextH;
+        font-weight: bold;
+        color: black;
+        &:hover{
+            color:green;
+        }
+    }
+    .img{
+        display: flex;
+        justify-content: center;
+    }
+    
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gridInicio{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "sectionServicios sectionProductos"
+    "sectionContactanos sectionContactanos"
+    "footer footer";
+    grid-template-columns: 1f 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+}
+@import "./utilities/varible";
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/sectionIndex";
+@import "./layout/footer";
+
+
+
