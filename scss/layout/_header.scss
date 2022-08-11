@@ -4,9 +4,37 @@ header{
     background-image: url(../images/siluetaHojas.png);
     background-repeat: repeat;
     background-size: contain;
-    @include medidas;
     font-family: 'Playfair Display',serif;
+    @include importan-medidas;
 }
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 5s linear both;
+	animation: tracking-in-expand 5s linear both;
+}
+@-webkit-keyframes tracking-in-expand {
+    0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    opacity: 1;
+    }
+}  
 .logo img{
     border-radius: 2cm;
     border: double green;

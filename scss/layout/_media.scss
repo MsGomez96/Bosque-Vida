@@ -1,0 +1,176 @@
+/* XXL */
+@media (max-width: 768px){
+    /* Barra de navegación tablet */
+    .header{
+        flex-direction: column;
+    }
+    .flex-itemNavegacion nav ul{
+        flex-direction: row;
+    }
+    header{
+        flex-direction: column;
+        background-color: #BBF551;
+        height: auto;
+        width: 100%;
+    }
+    .nav li a {
+        color: black;
+        font-size: 15px;
+    }
+    .nav li ul {
+        display:none;
+    }
+    .nav li:hover > ul {
+        display:none;
+    }
+    /* Titulo de pagina */
+    main{
+        background-color: #BBF551;
+        margin-bottom: 5px;
+    }
+    h1{
+        font-size: 20px;
+        color: black;
+        padding: 5px;
+    }
+    .slogan{
+        font-size: 16px;
+        color: black;
+        padding-bottom: 10px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .flex-imagen{
+        flex-direction: column;
+    }
+    footer{
+        background-color:#BBF551;
+    }
+}
+/* MD */
+@media (max-width: 768px){
+    /* Barra de navegación tablet */
+    .gridInicio{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "sectionServicios"
+        "sectionProductos"
+        "sectionContactanos"
+        "footer";
+        grid-template-columns: 100%;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .flex-itemNavegacion nav ul{
+        flex-direction: column;
+    }
+    header{
+        background-color: #BBF551;
+        height: auto;
+        width: 100%;
+    }
+    .nav li a {
+        color: black;
+        font-size: 15px;
+    }
+    .nav li ul {
+        display:none;
+    }
+    .nav li:hover > ul {
+        display:none;
+    }
+    /* Titulo de pagina */
+    main{
+        background-color: #BBF551;
+        margin-bottom: 5px;
+    }
+    h1{
+        font-size: 20px;
+        color: black;
+        padding: 5px;
+    }
+    .slogan{
+        font-size: 16px;
+        color: black;
+        padding-bottom: 10px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    footer{
+        background-color:#BBF551;
+    }
+}
+/* SM */
+@media (max-width: 576px){
+    .gridInicio{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "sectionServicios"
+        "sectionProductos"
+        "sectionContactanos"
+        "footer";
+        grid-template-columns: 100%;
+    }
+    /* Barra de navegación mobil */
+    .header{
+        flex-direction: column;
+    }
+    .flex-itemNavegacion nav ul{
+        flex-direction: column;
+        align-content: center;
+    }
+    header{
+        background-color: white;
+        height: auto;
+        width: 100%;
+    }
+    .nav li a {
+        color: black;
+        font-size: 13px;
+    }
+    .nav li ul {
+        display:none;
+    }
+    .nav li:hover > ul {
+        display:none;
+    }
+    /* Titulo de pagina */
+    h1{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .slogan{
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .flex-containerInicio picture{
+        flex-direction: column;
+    }
+    footer{
+        margin-top: 1px;
+    }
+}
+/* XS */
+@media (max-width: 250px){
+    /* Titulo de pagina */
+    h1{
+        font-size: 18px;
+    }
+    .slogan{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    h2{
+        font-size: 15px;
+    }
+}

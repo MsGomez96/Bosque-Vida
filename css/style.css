@@ -1,37 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap');
-/* Fuente para textos: Playfair Display */
 @import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Playfair+Display&display=swap');
-/* Fuente para titulos:
-        font-family: 'Fondamento', cursive;
-    Fuente para texto:
-        font-family: 'Playfair Display', serif;
-*/
-/* paleta de colores a usar:
-negro: #000
-verde oscuro: #1A4D2E
-verde fondo: #9EB23B
-amarillo: #FF9F29
-gris: #FAF3E3
-*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Grid general*/
-.gridInicio{
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "sectionServicios sectionProductos"
-    "sectionContactanos sectionContactanos"
-    "footer footer";
-    grid-template-columns: 1f 1fr;
-    grid-template-rows: auto;
-    grid-column-gap: 10px;
-}
-/* Grid sections */
 .gridSections{
     display: grid;
     grid-template-areas: 
@@ -42,7 +15,6 @@ gris: #FAF3E3
     grid-template-columns: 100%;
     grid-template-rows: auto;
 }
-/* Header */
 header{
     grid-area: header;
     background-color:#9EB23B;
